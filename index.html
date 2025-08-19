@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guides — Инструкции</title>
+  <meta name="description" content="Простые пошаговые инструкции по установке и сертификатам." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-accent">⚙️</span>
+      <span id="siteTitle">Guides</span>
+    </div>
+
+    <div class="header-actions">
+      <div class="lang-switch">
+        <button data-lang="ru" class="lang-btn active">RU</button>
+        <button data-lang="en" class="lang-btn">EN</button>
+      </div>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Поиск по инструкциям…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="guideList">
+      <!-- Список инструкций отрисуется JS -->
+    </aside>
+
+    <main class="content">
+      <div class="content-header">
+        <h1 id="guideTitle">Выберите инструкцию</h1>
+        <div class="content-actions">
+          <button id="printBtn" class="btn secondary" title="Печать/Сохранить в PDF">🖨️ <span data-i18n="print">Печать</span></button>
+          <button id="copyAllBtn" class="btn" title="Скопировать все шаги">📋 <span data-i18n="copyAll">Скопировать всё</span></button>
+        </div>
+      </div>
+
+      <div id="guideBody" class="steps">
+        <div class="blank" data-i18n="blankText">Слева выберите нужную инструкцию или воспользуйтесь поиском.</div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div id="footerText">Made for quick how‑to’s • GitHub Pages ready</div>
+  </footer>
+
+  <script src="assets/script.js" defer></script>
+</body>
+</html>
